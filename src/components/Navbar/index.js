@@ -12,13 +12,13 @@ import {
   NavBtnLink
 } from "./NavbarElements";
 
-const index = () => {
+const Navbar = ({ toggle }) => {
   return (
     <React.Fragment>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Dolla</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -44,4 +44,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Navbar;
